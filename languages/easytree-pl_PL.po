@@ -1,0 +1,157 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EasyTree v0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-02-19 09:43:24+0000\n"
+"Last-Translator: damlys <damian.lysiak@hotmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: dashboard.php:60
+#@ easytree
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: dashboard.php:65
+#@ easytree
+msgid "Exclude pages"
+msgstr "Wyklucz strony"
+
+#: dashboard.php:68
+#@ easytree
+msgid "Add the IDs, separated by comma, of pages you want to exclude"
+msgstr "Dodaj ID, oddzielone przecinkami, stron które chcesz wykluczyć"
+
+#: dashboard.php:74
+#@ easytree
+msgid "Display authors"
+msgstr "Wyświetl autorów"
+
+#: dashboard.php:76
+#: dashboard.php:93
+#@ easytree
+msgid "Yes"
+msgstr "Tak"
+
+#: dashboard.php:78
+#: dashboard.php:95
+#@ easytree
+msgid "No"
+msgstr "Nie"
+
+#: dashboard.php:83
+#@ easytree
+msgid "Exclude authors"
+msgstr "Wyklucz autorów"
+
+#: dashboard.php:86
+#@ easytree
+msgid "Add the IDs, separated by comma, of users you want to exclude"
+msgstr "Dodaj ID, oddzielone przecinkami, autorów których chcesz wykluczyć"
+
+#: dashboard.php:100
+#@ easytree
+msgid "Skin"
+msgstr "Skórka"
+
+#: dashboard.php:115
+#: functions/get_easytree_html.php:21
+#@ easytree
+#@ default
+msgid "Menu"
+msgstr "Menu"
+
+#: dashboard.php:117
+#@ easytree
+msgid "If you wish to add \"Menu\" element to your EasyTree, just create new menu and assign it to EasyTree theme location."
+msgstr "Jeśli chcesz dodać element \"Menu\" do EasyTree, po prostu utwórz nowe menu i przypisz je do EasyTree w położeniu motywu."
+
+#: dashboard.php:119
+#@ easytree
+msgid "Add a custom link with \"#\" URL to set element as folder."
+msgstr "Dodaj odnośnik z URL \"#\" żeby ustawić element jako folder."
+
+#: dashboard.php:120
+#@ easytree
+msgid "You can also check \"Open link in a new window/tab\" to open link in new web browser tab."
+msgstr "Możesz również zaznaczyć \"Otwórz odnośnik w nowym oknie/nowej karcie\" aby odnośniki otwierały się w nowej zakładce przeglądarki internetowej."
+
+#: dashboard.php:126
+#@ easytree
+msgid "Use"
+msgstr "Jak użyć"
+
+#: dashboard.php:129
+#@ easytree
+msgid "You can use this plugin only once per page!"
+msgstr "Ten plugin możesz użyć tylko raz na strone!"
+
+#: dashboard.php:133
+#@ easytree
+msgid "About"
+msgstr "O wtyczce"
+
+#: dashboard.php:137
+#@ easytree
+msgid "Developed by"
+msgstr "Plugin stworzony przez"
+
+#: dashboard.php:142
+#@ easytree
+msgid "Rate the plugin on Wordpress.org"
+msgstr "Oceń plugin na Wordpress.org"
+
+#: dashboard.php:146
+#@ easytree
+msgid "Invite me for a beer :)"
+msgstr "Zaproś mnie na piwo :)"
+
+#: functions/get_easytree_html.php:32
+#@ default
+msgid "Pages"
+msgstr ""
+
+#: functions/get_easytree_html.php:45
+#@ default
+msgid "Categories"
+msgstr ""
+
+#: functions/get_easytree_html.php:59
+#@ default
+msgid "Tags"
+msgstr ""
+
+#: functions/get_easytree_html.php:75
+#@ default
+msgid "Author"
+msgstr ""
+
+#: class/class.easytreewidget.php:27
+#@ default
+msgid "Title:"
+msgstr ""
+
+#: dashboard.php:91
+#@ easytree
+msgid "Show empty taxonomies"
+msgstr "Pokaż puste taksonomie"
+
+#: dashboard.php:128
+#, php-format
+#@ easytree
+msgid "To display the sitemap, just add the widget, or use %s shortcode on any page or post."
+msgstr "Aby wyświetlić mapę strony, po prostu dodaj widget, lub użyj %s kodu na jakiejkolwiek stronie, lub wpisie."
+
