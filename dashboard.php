@@ -139,7 +139,7 @@ function easytree_options_page() {
                             </p>
                             <p>
                                 <img src="<?php echo EASYTREE_URI; ?>/img/star169.png" style="vertical-align:middle;" />
-                                <a href="https://wordpress.org/" target="_blank"><?php _e( 'Rate the plugin on Wordpress.org', 'easytree' ); ?></a>
+                                <a href="https://wordpress.org/plugins/easytree/" target="_blank"><?php _e( 'Rate the plugin on Wordpress.org', 'easytree' ); ?></a>
                             </p>
                             <p>
                                 <img src="<?php echo EASYTREE_URI; ?>/img/jar19.png" style="vertical-align:middle;" />
