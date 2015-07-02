@@ -12,8 +12,8 @@ ul.easytree-container
 	white-space: nowrap;
 	padding: 3px;
 	margin: 0; /* issue 201 */
-	background-color: white;
-	border: 1px dotted gray;
+	color: #444;
+	background-color: #fff;
 	overflow: auto;
 /*	height: 100%; /* issue 263 */
 }
@@ -333,6 +333,12 @@ span.easytree-title
 	margin: 0px;
 	margin-left: 3px;
 	cursor: pointer;
+	color: inherit;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	     -o-user-select: none;
+	        user-select: none; 
 }
 .easytree-title a {
     text-decoration: none;
@@ -592,4 +598,18 @@ span.easytree-drop-target.easytree-drop-reject
 }
 span.easytree-drop-target.easytree-drop-after a
 {
+}
+
+
+/*** Wordpress ****************************************************************/
+
+.easytree-focused span.current_post_item .easytree-title,
+.easytree-focused span.current_page_item .easytree-title,
+.easytree-focused span.current-cat .easytree-title {
+	background-color: #F2F7FD;
+	border-color: 1px solid #B8D6FB;
+}
+.easytree-focused span.easytree-active .easytree-title {
+	color: #fff;
+	border-color: #3169C6;
 }

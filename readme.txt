@@ -50,6 +50,10 @@ Go to Dashboard -> Settings -> EasyTree
 
 == Changelog ==
 
+= 1.01 =
+* Improved easytree styles
+* Folders are expanding with single click
+
 = 1.0 =
 * Assets added
 
@@ -57,6 +61,9 @@ Go to Dashboard -> Settings -> EasyTree
 Initial version
 
 == Upgrade Notice ==
+
+= 1.01 =
+Better usability and styles
 
 = 1.0 =
 Ready, stable version

@@ -13,8 +13,8 @@
 	white-space: nowrap;
 	padding: 3px;
 	margin: 0; /* issue 201 */
-	background-color: #FCFCFC;
-	border: 1px dotted gray;
+	color: #222;
+	background-color: #fff;
 	overflow: auto;
 	height: 100%; /* issue 263 */
 }
@@ -237,6 +237,12 @@ span.easytree-icon /* Default icon */
 	border-radius: 3px;
 	text-decoration: none;
 	cursor: pointer;
+	color: inherit;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	     -o-user-select: none;
+	        user-select: none; 
 }
 .easytree-title a {
     text-decoration: none;
@@ -605,4 +611,17 @@ span.easytree-drop-target.easytree-drop-reject
 }
 span.easytree-drop-target.easytree-drop-after span.easytree-title
 {
+}
+
+
+/*** Wordpress ****************************************************************/
+
+.easytree-focused span.current_post_item .easytree-title,
+.easytree-focused span.current_page_item .easytree-title,
+.easytree-focused span.current-cat .easytree-title {
+	background: transparent linear-gradient(to bottom, #F8FCFE 0%, #EFF9FE 100%) repeat scroll 0% 0%;
+	border-color: #D8F0FA;
+}
+.easytree-focused span.easytree-active .easytree-title {
+
 }

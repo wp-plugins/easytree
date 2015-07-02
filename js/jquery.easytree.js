@@ -673,8 +673,8 @@
 
             $($this.selector + " .easytree-node").on("click", nodes, nodeClick);
             $($this.selector + " .easytree-expander").on("click", nodes, toggleNodeEvt);
-            $($this.selector + " .easytree-icon").on("dblclick", nodes, toggleNodeEvt);
-            $($this.selector + " .easytree-title").on("dblclick", nodes, toggleNodeEvt);
+            $($this.selector + " .easytree-icon").on("click", nodes, toggleNodeEvt);
+            $($this.selector + " .easytree-title").on("click", nodes, toggleNodeEvt);
 
             var s7 = new Date();
 

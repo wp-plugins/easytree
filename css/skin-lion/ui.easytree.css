@@ -18,10 +18,11 @@
 	white-space: nowrap;
 	padding: 3px;
 	margin: 0; /* issue 201 */
-	background-color: white;
-	border: 1px dotted gray;
 	overflow: auto;
 	height: 100%; /* issue 263 */
+	color: inherit;
+	background: none;
+	border: none;
 }
 
 .easytree-container:focus {
@@ -94,7 +95,7 @@ span.easytree-drag-helper-img,
 	vertical-align: top;
 	background-repeat: no-repeat;
 	background-position: left;
-	background-image: url("icons.gif");
+	background-image: url("icons.png");
 	background-position: 0 0;
 }
 /** Used by iconclass option */
@@ -239,6 +240,12 @@ span.easytree-icon /* Default icon */
 	border-radius: 0;
 	text-decoration: none;
 	cursor: pointer;
+	color: inherit;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	     -o-user-select: none;
+	        user-select: none; 
 }
 .easytree-title a {
     text-decoration: none;
@@ -474,4 +481,16 @@ span.easytree-drop-target.easytree-drop-reject
 }
 span.easytree-drop-target.easytree-drop-after a
 {
+}
+
+/*** Wordpress ****************************************************************/
+
+.easytree-focused span.current_post_item .easytree-title,
+.easytree-focused span.current_page_item .easytree-title,
+.easytree-focused span.current-cat .easytree-title {
+	border-color: #999;
+}
+.easytree-focused span.easytree-active .easytree-title {
+	color: #fff;
+	border-color: #3875D7;
 }

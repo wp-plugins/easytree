@@ -99,7 +99,7 @@ ob_start();
         // kategorie i elementy z menu z href="#" jako foldery
         jQuery('.easytree li.cat-item, .easytree li:has(a[href="#"])').addClass('isFolder');
         // kategorie i tagi w drzewie przestaja byc linkami, mozna je tylko rozwijac
-        jQuery('.easytree li > a[href="#"]').removeAttr('href'); /*.easytree li.cat-item > a, */
+        jQuery('.easytree li.cat-item > a, .easytree li > a[href="#"]').removeAttr('href');
         // biezaca strona
         jQuery('.easytree__pages li.current_page_item').addClass('isActive');
         jQuery('.easytree__pages li.current_page_item').parents('.easytree li').addClass('isExpanded');
@@ -110,7 +110,7 @@ ob_start();
         jQuery('.easytree__categories li.current_post_item').addClass('isActive');
         jQuery('.easytree__categories li.current_post_item').parents('.easytree li').addClass('isExpanded');
         // tagi i autorzy rozwijaja sie tak, aby aktywny wpis byl widoczny po rozwinieciu "Tagi", lub "Autorzy"
-	// jQuery('.easytree__tags li.current_post_item, .easytree__authors li.current_post_item').parents('.easytree li li').addClass('isExpanded');
+        jQuery('.easytree__tags li.current_post_item, .easytree__authors li.current_post_item').parents('.easytree li li').addClass('isExpanded');
         
         // uruchomienie drzewa
         jQuery("#easytree").easytree({

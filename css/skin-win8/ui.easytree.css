@@ -29,8 +29,8 @@ List view:
 	white-space: nowrap;
 	padding: 3px;
 	margin: 0; /* issue 201 */
-	background-color: white;
-	border: 1px dotted gray;
+	color: #222;
+	background-color: #fff;
 	overflow: auto;
 	height: 100%; /* issue 263 */
 }
@@ -341,6 +341,12 @@ a.easytree-title
 	   */
 /*	border: 1px solid white; /* Note: 'transparent' would not work in IE6 */
 	cursor: pointer;
+	color: inherit;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	     -o-user-select: none;
+	        user-select: none; 
 }
 .easytree-title a {
     text-decoration: none;
@@ -602,4 +608,17 @@ span.easytree-drop-target.easytree-drop-reject
 }
 span.easytree-drop-target.easytree-drop-after a
 {
+}
+
+
+/*** Wordpress ****************************************************************/
+
+.easytree-focused span.current_post_item,
+.easytree-focused span.current_page_item,
+.easytree-focused span.current-cat {
+	background-color: #E5F3FB;
+	border-color: #70C0E7;
+}
+.easytree-focused span.easytree-active {
+
 }
