@@ -50,6 +50,9 @@ Go to Dashboard -> Settings -> EasyTree
 
 == Changelog ==
 
+= 1.02 =
+* Default setting values
+
 = 1.01 =
 * Improved easytree styles
 * Folders are expanding with single click
@@ -61,6 +64,9 @@ Go to Dashboard -> Settings -> EasyTree
 Initial version
 
 == Upgrade Notice ==
+
+= 1.02 =
+Default setting values
 
 = 1.01 =
 Better usability and styles

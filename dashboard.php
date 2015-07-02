@@ -13,6 +13,11 @@ function easytree_register_setting() {
     register_setting( 'easytree_options', 'easytree_option_show_empty_taxs', 'easytree_validate_bool' );
     
     register_setting( 'easytree_options', 'easytree_option_skin', 'easytree_validate_skin' );
+
+    // default settings
+    if (get_option('easytree_option_display_authors') == '') update_option('easytree_option_display_authors', '0');
+    if (get_option('easytree_option_show_empty_taxs') == '') update_option('easytree_option_show_empty_taxs', '0');
+    if (get_option('easytree_option_skin') == '') update_option('easytree_option_skin', 'lion');
 }
 
 
