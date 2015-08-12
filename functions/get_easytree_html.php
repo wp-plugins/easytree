@@ -10,6 +10,9 @@ $option_exclude_from_pages = get_option('easytree_option_exclude_from_pages');
 $option_display_authors = (bool)get_option('easytree_option_display_authors');
 $option_exclude_from_authors = get_option('easytree_option_exclude_from_authors');
 $option_show_empty_taxs = !((bool)get_option('easytree_option_show_empty_taxs'));
+if(current_user_can('read_private_posts')) {
+    $option_show_empty_taxs = false;
+}
 
 ob_start();
 ?>

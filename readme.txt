@@ -50,6 +50,9 @@ Go to Dashboard -> Settings -> EasyTree
 
 == Changelog ==
 
+= 1.04 =
+* Better support for private posts and pages
+
 = 1.03 =
 * Added support for private posts and pages
 
@@ -67,6 +70,9 @@ Go to Dashboard -> Settings -> EasyTree
 Initial version
 
 == Upgrade Notice ==
+
+= 1.04 =
+Display categories for private posts and pages
 
 = 1.03 =
 Display private posts and pages
