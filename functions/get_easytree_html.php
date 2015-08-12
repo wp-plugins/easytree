@@ -32,11 +32,17 @@ ob_start();
             <a href="#"><?php _e('Pages'); ?></a>
             <ul>
                 <?php
+                $post_status = 'publish';
+                if(current_user_can('read_private_pages')) {
+                    $post_status .= ',private';
+                }
+
                 wp_list_pages(array(
                     'exclude'       => $option_exclude_from_pages,
                     'title_li'      => null,
                     'sort_column'   => 'post_title', /*'menu_order, post_title',*/
                     'sort_order'    => 'ASC',
+                    'post_status'   => $post_status,
                 ));
                 ?>
             </ul>
@@ -75,13 +81,6 @@ ob_start();
             <a href="#"><?php _e('Author'); ?></a>
             <ul>
                 <?php
-                /*wp_list_authors(array(
-                    'hide_empty'    => $option_show_empty_taxs,
-                    'exclude_admin' => 0, // user with login='admin'
-                    'orderby'       => 'name', 
-                    'order'         => 'ASC', 
-                    
-                ));*/
                 easytree_list_authors(array( // get_users( array() )
                     'exclude'   => $option_exclude_from_authors,
                     'orderby'   => 'display_name', 

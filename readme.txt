@@ -50,6 +50,9 @@ Go to Dashboard -> Settings -> EasyTree
 
 == Changelog ==
 
+= 1.03 =
+* Added support for private posts and pages
+
 = 1.02 =
 * Default setting values
 
@@ -64,6 +67,9 @@ Go to Dashboard -> Settings -> EasyTree
 Initial version
 
 == Upgrade Notice ==
+
+= 1.03 =
+Display private posts and pages
 
 = 1.02 =
 Default setting values
