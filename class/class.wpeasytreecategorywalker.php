@@ -26,7 +26,7 @@ class EasyTreeCategoryWalker extends Walker_Category {
 			$html = '<ul>';
 			foreach($posts as $p) {
 				if( !in_array($p->ID, $this->displayed_posts) ) {
-					$html .= '<li class="post_item post-item-'.$p->ID.' '.($is_single && $p->ID==$post->ID?'current_post_item':'').' post-status-'.get_post_status($p->ID).'"><a href="'.get_permalink( $p->ID ).'">'.$p->post_title.'</a></li>';
+					$html .= '<li class="post_item post-item-'.$p->ID.' '.($is_single && $p->ID==$post->ID?'current_post_item':'').' post-status-'.$p->post_status.'"><a href="'.get_permalink( $p->ID ).'">'.$p->post_title.'</a></li>';
 					$this->displayed_posts[] = $p->ID;
 				}
 			}

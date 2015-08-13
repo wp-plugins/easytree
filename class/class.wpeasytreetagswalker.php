@@ -31,7 +31,7 @@ class EasyTreeTagsWalker extends Walker_Category {
 		if($posts) {
 			$html = '<ul>';
 			foreach($posts as $p) {
-				$html .= '<li class="post_item post-item-'.$p->ID.' '.($is_single && $p->ID==$post->ID?'current_post_item':'').' post-status-'.get_post_status($p->ID).'"><a href="'.get_permalink( $p->ID ).'" rel="noindex,nofollow">'.$p->post_title.'</a></li>';
+				$html .= '<li class="post_item post-item-'.$p->ID.' '.($is_single && $p->ID==$post->ID?'current_post_item':'').' post-status-'.$p->post_status.'"><a href="'.get_permalink( $p->ID ).'" rel="noindex,nofollow">'.$p->post_title.'</a></li>';
 			}
 			$html .= '</ul>';
 		}

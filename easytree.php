@@ -3,7 +3,7 @@
  * Plugin Name: EasyTree
  * Plugin URI: http://easytree.damlys.pl/
  * Description: Complete dropdown tree navigation that contain pages, categories with posts, tags, authors and own menu.
- * Version: 1.2
+ * Version: 1.3
  * Author: Damian Lysiak
  * Author URI: http://damlys.pl/
  * License: GPLv2 or later
@@ -65,6 +65,13 @@ function easytree_load_scripts() {
         */
     }
 }
+
+
+function easytree_page_status_class($css_class, $page, $depth, $args, $current_page) {
+    $css_class[] = 'page-status-' . $page->post_status;
+    return $css_class;
+}
+add_filter('page_css_class', 'easytree_page_status_class', 10, 2);
 
 
 function easytree_shortcode( $atts ){

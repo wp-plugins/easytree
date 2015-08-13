@@ -50,6 +50,9 @@ Go to Dashboard -> Settings -> EasyTree
 
 == Changelog ==
 
+= 1.3 =
+* Support for page status class
+
 = 1.2 =
 * Remove support for cache
 
@@ -76,6 +79,9 @@ Go to Dashboard -> Settings -> EasyTree
 Initial version
 
 == Upgrade Notice ==
+
+= 1.3 =
+Support for page status class
 
 = 1.2 =
 Remove support for cache
