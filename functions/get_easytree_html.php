@@ -1,10 +1,20 @@
 <?php
 function get_easytree_html() {
 
-// funkcja może zostać użyta tylko raz
-if($GLOBALS["get_easytree_html_only_once"]) return;
-$GLOBALS["get_easytree_html_only_once"] = true;
-// ---
+    // funkcja może zostać użyta tylko raz
+    if($GLOBALS["get_easytree_html_only_once"]) return;
+    $GLOBALS["get_easytree_html_only_once"] = true;
+    // ---
+
+    $result = wp_cache_get( 'easytree' );
+    if($result === false) {
+        $result = generate_easytree_html();
+        wp_cache_set( 'easytree', $result );
+    }
+    return $result;
+}
+
+function generate_easytree_html() {
 
 $option_exclude_from_pages = get_option('easytree_option_exclude_from_pages');
 $option_display_authors = (bool)get_option('easytree_option_display_authors');
