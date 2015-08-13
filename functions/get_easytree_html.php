@@ -6,12 +6,7 @@ function get_easytree_html() {
     $GLOBALS["get_easytree_html_only_once"] = true;
     // ---
 
-    $result = wp_cache_get( 'easytree' );
-    if($result === false) {
-        $result = generate_easytree_html();
-        wp_cache_set( 'easytree', $result );
-    }
-    return $result;
+    return generate_easytree_html();
 }
 
 function generate_easytree_html() {

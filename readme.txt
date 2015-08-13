@@ -50,6 +50,9 @@ Go to Dashboard -> Settings -> EasyTree
 
 == Changelog ==
 
+= 1.2 =
+* Remove support for cache
+
 = 1.1 =
 * Support for cache
 
@@ -73,6 +76,9 @@ Go to Dashboard -> Settings -> EasyTree
 Initial version
 
 == Upgrade Notice ==
+
+= 1.2 =
+Remove support for cache
 
 = 1.1 =
 Support for cache
